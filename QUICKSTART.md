@@ -4,7 +4,7 @@
 
 ### Req:
 * CPU: AMD64 ( = Intel 64 bit)
-    *  The base docker debian images are x86_64 based, so the ARM,MIPS currently not supported!
+    *  The base docker debian images are x86_64 based, so the ARM, MIPS currently not supported!
 * Operating system
     * Linux is suggested
         * The development and the testing platform is Linux.
@@ -19,7 +19,7 @@
     * https://docs.docker.com/compose/install/
 * disk space ( >= ~15Gb  )
     * for small extracts  >= ~15Gb
-    * for big extracts ( continents, planet) 250 Gb
+    * for big extracts (continents, planet) 250 Gb
     * And depends on
         * OpenStreetMap data size
         * Zoom level
@@ -27,12 +27,12 @@
     * Takes 24hrs to import on a reasonable machine, and is immediately available with postserve
 * memory ( >= 3Gb )
     * for small extracts 3Gb-8Gb RAM
-    * for big extracts ( Europe, Planet) > 8-32 Gb
+    * for big extracts (Europe, Planet) > 8-32 Gb
 * internet connections
     * for downloading docker images
     * for downloading OpenStreetMap data from Geofabrik
 
-Important:  The ./quickstart.sh is for small extracts - not optimal for a Planet rendering !!
+Important:  The `./quickstart.sh` is for small extracts - not optimal for a Planet rendering !!
 
 ### First experiment - with `albania` ( small extracts! )
 
@@ -43,16 +43,16 @@ cd openmaptiles
 ```
 
 If you have problems with the quickstart
-* check the ./quickstart.log!
+* check the `./quickstart.log`!
 * doublecheck the system requirements!
 * check the current issues: https://github.com/openmaptiles/openmaptiles/issues 
 * create new issues: 
-    * create a new gist: https://gist.github.com/ from your ./quickstart.log
+    * create a new gist: https://gist.github.com/ from your `./quickstart.log
     * doublecheck: don't reveal any sensitive information about your system   
     * create a new issue: https://github.com/openmaptiles/openmaptiles/issues
         * describe the problems  
         * add any pertinent information about your environment 
-        * link your (quickstart.log) gist!
+        * link your (`quickstart.log`) gist!
     
 ### Check other extracts
 
@@ -379,7 +379,7 @@ and the generated maps are going to be available in browser on [localhost:8090/t
 
 start: 
 *  ` make start-tileserver` 
-and the generated maps are going to be available in webbrowser on [localhost:8080](http://localhost:8080/).
+and the generated maps are going to be available in web browser on [localhost:8080](http://localhost:8080/).
 
 This is only a quick preview, because your mbtiles only generated to zoom level 7 !  
 
@@ -390,10 +390,10 @@ modify the settings in the `.env`  file, the defaults :
 * QUICKSTART_MIN_ZOOM=0
 * QUICKSTART_MAX_ZOOM=7  
 
-and re-start  `./quickstart.sh `
-*  the new config file re-generating to here  ./data/docker-compose-config.yml
+and re-start  `./quickstart.sh`
+*  the new config file re-generating to here  `./data/docker-compose-config.yml`
 *  Known problems:
-    * If you use same area - then the ./data/docker-compose-config.yml not re-generating, so you have to modify by hand! 
+    * If you use same area - then the `./data/docker-compose-config.yml` not re-generating, so you have to modify by hand! 
 
 Hints: 
 * Small increments! Never starts with the MAX_ZOOM = 14
